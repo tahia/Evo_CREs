@@ -5,7 +5,7 @@
 
 ##### Author : Taslima Haque                                                                                                 
 ##### Last modified: 06/08/2025 
-##### This repository holds the codes/scripts used for this project                                                                                       
+##### This repository holds the codes/scripts used for the analyses                                                                                       
 ##### Please send your query to the author at: taslima@utexas.edu or tahiadu@gmail.com   
 
 
