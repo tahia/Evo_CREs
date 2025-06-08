@@ -17,3 +17,26 @@ As suggested by Song et al., we chose -f parameter based on the distribution obt
 K=25,21,30,19 for PhFIL, PhHAL, SV, and PV
 
 `dCNS/dCNS maskGenome -i path_to_reference_genome.fa -o masked_REF_k20_25.fa -s REF.sam -c REF_GENE.fa -k REF_20mer_dumps.fa -f 25` 
+
+#### Extract sequences
+```
+python3 dCNS/scripts/extractInterGeneticSequence/sequenceUpStreamGeneAndDownStreamV2.py \
+-g REF.gff3 -r path_to_reference_genome.fa -c REF_GENE.fa -q path_to_query_genome.fa \
+-s PHFIL.sam -o dCNS_QNAME_REF
+```
+#### Write the commands to run
+```
+ls | awk '{print("dCNS/dCNS cut1Gap -ra masked_REF_k20_xx_cds.fa -qa masked_Query_k20_xx.fa -i "$1" -r reference -o "$1".5")}' > command1
+```
+#### Concat and clean the output
+`perl dCNS/scripts/combineCnsSamFiles.pl dCNS_QNAME_REF > 5.sam`
+
+`cat 5.sam| sort | uniq | awk '{print $1"\t"$2"\t"$3"\t"$4"\t"5"\t"$6"\t"$7"\t"$8"\t"$9"\t"$10"\t"$11}'  | samtools view -O BAM --reference masked_REF_k20_xx_cds.fa | samtools sort > 5.bam`
+
+`seqkit locate -F --only-positive-strand --bed -m 0 -p n masked_REF_k20_xx_cds.fa > ns.bed`
+
+`bedtools merge -i ns.bed > ns_megered.bed`
+
+`bamToBed -i 5.bam | bedtools sort -i | bedtools merge > 5.bed`
+
+`bedtools subtract -a 5.bed -b ns_megered.bed > 5_nons.bed`
