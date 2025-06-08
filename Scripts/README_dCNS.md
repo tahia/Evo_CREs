@@ -1,6 +1,6 @@
-# dCNS Panicoids
+# Run dCNS for Panicoids
 
-jellyfish  count -t 20 -C -m 20 -s 50G -o REF_20mer path_to_reference_genome.fa
+`jellyfish  count -t 20 -C -m 20 -s 50G -o REF_20mer path_to_reference_genome.fa`
 
 jellyfish histo -o REF_20mer.histo REF_20mer
 
@@ -12,4 +12,5 @@ minimap2 -ax splice -a -uf -C 1 -k 12 -P -t 12 --cs path_to_reference_genome.fa 
 
 #Mask Genome
 As suggested by Song et al., we chose -f parameter based on the distribution obtained from k-mer histogram (REF_20mer.histo)
+
 dCNS/dCNS maskGenome -i path_to_reference_genome.fa -o masked_REF_k20_25.fa -s REF.sam -c REF_GENE.fa -k REF_20mer_dumps.fa -f 25 
