@@ -150,8 +150,6 @@ CH_Annot<-read.delim("Data/Redo_2024_V2/HAL/Catalog_Annot/CH_peaks.clean2.catalo
     left_join(.,y=CF_Annot,
               #by=c("PeakID"="Peak_ID")) %>% 
               by=c("PeakID"="PeakID")) %>% 
-    # mutate(TAGAVG=TAGCount/143,
-    #        SNPAVG=SNPCount/20) %>% 
     select(BinIndex,TAGCount,SNPCount,Category) %>% 
     filter(Category=="gACR") %>% 
     group_by(BinIndex) %>% 
@@ -186,8 +184,6 @@ CH_Annot<-read.delim("Data/Redo_2024_V2/HAL/Catalog_Annot/CH_peaks.clean2.catalo
 (SumpCoastal<-as_tibble(Summit_CF) %>% 
     left_join(.,y=CF_Annot,
               by=c("PeakID"="PeakID")) %>% 
-    # mutate(TAGAVG=TAGCount/143,
-    #        SNPAVG=SNPCount/20) %>% 
     select(BinIndex,TAGCount,SNPCount,Category) %>% 
     filter(Category=="pACR") %>% 
     group_by(BinIndex) %>% 
