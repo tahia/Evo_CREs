@@ -1,5 +1,3 @@
-### Evo_CREs
-
 #### Title: "The landscape of regulatory element evolution in a C4 perennial grass"
 
 
