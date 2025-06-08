@@ -5,7 +5,6 @@
 
 ##### Author : Taslima Haque                                                                                                 
 ##### Last modified: 06/08/2025 
-##### This repository holds the codes/scripts used for the analyses                                                                                       
 ##### Please send your query to the author at: taslima@utexas.edu or tahiadu@gmail.com   
 
 
@@ -19,5 +18,8 @@ ParentDirectory:
 
 ```
 
-For ATACSeq peak identification pipeline, please check the following reopsitory:
+#### For ATACSeq peak identification pipeline, please check the following reopsitory:
 https://github.com/tahia/ATACSeq
+
+#### For CNS identification, check the dNCS pipeline developed by Song e al. (2020):
+https://github.com/baoxingsong/dCNS
