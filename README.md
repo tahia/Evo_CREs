@@ -24,4 +24,4 @@ https://github.com/tahia/ATACSeq
 #### For CNS identification, check the dNCS pipeline developed by Song e al. (2020):
 https://github.com/baoxingsong/dCNS
 
-Also, check Scripts/README_dCNS.md for the parameters used to detect CNS in *Panicum* 
+Also, check Scripts/README_dCNS.md for the parameters used to detect CNS in *Panicoids* 

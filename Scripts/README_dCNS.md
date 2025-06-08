@@ -14,5 +14,6 @@
 
 #### Mask Genome
 As suggested by Song et al., we chose -f parameter based on the distribution obtained from k-mer histogram (REF_20mer.histo)
+K=25,21,30,19 for PhFIL, PhHAL, SV, and PV
 
 `dCNS/dCNS maskGenome -i path_to_reference_genome.fa -o masked_REF_k20_25.fa -s REF.sam -c REF_GENE.fa -k REF_20mer_dumps.fa -f 25` 
