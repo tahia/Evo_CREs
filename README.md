@@ -15,6 +15,7 @@ ParentDirectory:
            Plots
            Scripts
 
+```
 This repository holds the codes/scripts used for this project
 
 For ATACSeq peak identification pipeline, please check the following reopsitory:
