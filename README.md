@@ -17,7 +17,7 @@ ParentDirectory:
 ```
 
 #### For ATACSeq peak identification pipeline, please check the following reopsitory:
-https://github.com/tahia/ATACSeq
+[ATACSeq Peak Calling](https://github.com/tahia/ATACSeq)
 
 #### For CNS identification, check the dNCS pipeline developed by Song e al. (2021):
 https://github.com/baoxingsong/dCNS
