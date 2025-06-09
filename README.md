@@ -20,7 +20,7 @@ ParentDirectory:
 [ATACSeq Peak Calling](https://github.com/tahia/ATACSeq)
 
 #### For CNS identification, check the dNCS pipeline developed by Song e al. (2021):
-https://github.com/baoxingsong/dCNS
+[dCNS](https://github.com/baoxingsong/dCNS)
 
 Also, check Scripts/README_dCNS.md for the parameters used to detect CNS in *Panicoids* 
 
