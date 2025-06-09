@@ -25,7 +25,7 @@ ParentDirectory:
 Also, check Scripts/README_dCNS.md for the parameters used to detect CNS in *Panicoids* 
 
 
-#### Reference:
+#### Citation:
 ```
 Conserved noncoding sequences provide insights into regulatory sequence and loss of gene expression in maize
 Baoxing Song, Edward S. Buckler, Hai Wang, Yaoyao Wu, 
