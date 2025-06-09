@@ -26,9 +26,11 @@ Also, check Scripts/README_dCNS.md for the parameters used to detect CNS in *Pan
 
 
 #### Reference:
+```
 Conserved noncoding sequences provide insights into regulatory sequence and loss of gene expression in maize
 Baoxing Song, Edward S. Buckler, Hai Wang, Yaoyao Wu, 
 Evan Rees, Elizabeth A. Kellogg, Daniel J. Gates, Merritt Khaipho-Burch, 
 Peter J. Bradbury, Jeffrey Ross-Ibarra, Matthew B. Hufford, and M. Cinta Romay
 Genome Res. July 2021 31: 1245-1257 
 doi:10.1101/gr.266528.120
+```
