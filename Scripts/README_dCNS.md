@@ -1,7 +1,8 @@
 # Run dCNS for Panicoids
 
-#### 1. Get K-mer distribution
-```jellyfish  count -t 20 -C -m 20 -s 50G -o REF_20mer path_to_reference_genome.fa
+#### 1. Get K-mer distribution for all reference and query genomes
+```
+jellyfish  count -t 20 -C -m 20 -s 50G -o REF_20mer path_to_reference_genome.fa
 
 jellyfish histo -o REF_20mer.histo REF_20mer
 
@@ -15,7 +16,7 @@ python3 dCNS/scripts/longestTranscript.py -g path_to_reference_genome.fa -f path
 minimap2 -ax splice -a -uf -C 1 -k 12 -P -t 12 --cs path_to_reference_genome.fa REF_GENE.fa > REF.sam
 ```
 
-#### 3. Mask Genome
+#### 3. Mask Genomes
 As suggested by Song et al., we chose -f parameter based on the distribution obtained from k-mer histogram (REF_20mer.histo)
 K=25,21,30,19 for PhFIL, PhHAL, SV, and PV
 
