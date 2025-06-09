@@ -266,22 +266,22 @@ poly.plot
 dev.off()
 
 ####### Supplement Fig S2
-datMatCov<-read.delim("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/C5_CH.dedup_b10.bw_Summit.tab",header = F,sep = "\t",skip = 3,na.strings = c(NA,"nan"))
+datMatCov<-read.delim("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/R1_CH.dedup_b10.bw_Summit.tab",header = F,sep = "\t",skip = 3,na.strings = c(NA,"nan"))
 
 
 CH<-as.data.frame(cbind(Count=colSums(datMatCov,na.rm = T),
                         Pos=seq(-4999,4999,10),
                         
-                        Sample=rep("C5_CH",1000)
+                        Sample=rep("R1_CH",1000)
 ))
 
 CH$Dens<-as.numeric(as.character(CH$Count))/sum(as.numeric(as.character(CH$Count)))
-write.csv(CH,file="Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/C5_CH_TSSTAG_Normalized_v3.csv",row.names = F)
+write.csv(CH,file="Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/R1_CH_TSSTAG_Normalized_v3.csv",row.names = F)
 
 ### Coastal
-CRep1<-read.csv("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/C4B_CF_TSSTAG_Normalized_v3.csv")
-CRep2<-read.csv("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/C5_CF_TSSTAG_Normalized_v3.csv")
-CRep3<-read.csv("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/C6_CF_TSSTAG_Normalized_v3.csv") #1901
+CRep1<-read.csv("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/R1_CF_TSSTAG_Normalized_v3.csv")
+CRep2<-read.csv("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/R2_CF_TSSTAG_Normalized_v3.csv")
+CRep3<-read.csv("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/R3_CF_TSSTAG_Normalized_v3.csv") 
 
 CRep1$REP<-rep("REP1",nrow(CRep1))
 CRep2$REP<-rep("REP2",nrow(CRep2))
@@ -291,9 +291,9 @@ CREP<-rbind(CRep1,CRep2,CRep3)
 CREP$Ecotype<-rep("Coastal",nrow(CREP))
 
 #####Inland
-IRep1<-read.csv("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/C3_CH_TSSTAG_Normalized_v3.csv")
-IRep2<-read.csv("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/C4B_CH_TSSTAG_Normalized_v3.csv")
-IRep3<-read.csv("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/C5_CH_TSSTAG_Normalized_v3.csv") #-4569,3011
+IRep1<-read.csv("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/R1_CH_TSSTAG_Normalized_v3.csv")
+IRep2<-read.csv("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/R2_CH_TSSTAG_Normalized_v3.csv")
+IRep3<-read.csv("Data/SELECTED_MACSPool_FE3_Clean_Intersect/Replicate_TSS_TAG/R3_CH_TSSTAG_Normalized_v3.csv") 
 
 IRep1$REP<-rep("REP1",nrow(IRep1))
 IRep2$REP<-rep("REP2",nrow(IRep2))
