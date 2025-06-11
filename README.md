@@ -13,7 +13,6 @@ ParentDirectory:
            Results
            Plots
            Scripts
-
 ```
 
 #### For ATACSeq peak identification pipeline, please check the following reopsitory:
