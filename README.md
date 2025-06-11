@@ -22,7 +22,7 @@ ParentDirectory:
 #### For CNS identification, please check the dNCS pipeline developed by Song e al. (2021):
 [dCNS](https://github.com/baoxingsong/dCNS)
 
-Also, check Scripts/README_dCNS.md for the parameters used to detect CNS in *Panicoids* 
+Also, you can go through Scripts/README_dCNS.md for the parameters used to detect CNS in *Panicoids* 
 
 
 #### Citation:
