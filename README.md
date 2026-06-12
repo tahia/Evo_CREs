@@ -5,7 +5,7 @@
 #### Last modified: 06/08/2025 
 #### Please send your query to the author at: taslima@utexas.edu or tahiadu@gmail.com   
 ####       
-##### Publication: Haque, T., Bhaskara, G.B., Schmitz, R.J. et al. 
+##### Publication: Haque, T., Bhaskara, G.B., Schmitz, R.J. & Juenger, T. E. 
 ##### The landscape of regulatory element evolution in a C4 perennial grass. 
 ##### BMC Genomics 27, 453 (2026). 
 ##### https://doi.org/10.1186/s12864-026-12785-w
